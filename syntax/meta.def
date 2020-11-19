@@ -1,0 +1,6 @@
+GRAMMAR    = LINE GRAMMAR | LINE
+LINE       = DEFINITION eol | comment eol | eol
+DEFINITION = identifier '=' OPTION
+OPTION     = SEQUENCE '|' OPTION | SEQUENCE
+SEQUENCE   = ANCHOR SEQUENCE | ANCHOR
+ANCHOR     = string | identifier
