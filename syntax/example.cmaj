@@ -1,0 +1,10 @@
+struct Point:
+    x: Int
+    y: Int
+
+def add(Point, Point) -> Point:
+    x = lhs.x + rhs.x
+    y = lhs.y + rhs.y
+    return Point(x, y)
+
+result = add(Point(-1, 1), Point(1, 0))
